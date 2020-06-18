@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <!-- Google Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Bowlby One SC' rel='stylesheet'>
+
+
+    <link rel="stylesheet" href="css/styles.css">
+
+    <title>MAAPS!</title>
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="header-name">
+            <a href="index.html">
+                <!--                <p>MAAPS</p>-->
+            </a>
+        </div>
+
+        <div class="header-content">
+            <nav class="header-nav_wrap">
+                <ul class="header-nav">
+                    <li class="header-nav-left"><a class="smoothscroll" href="#about">About</a></li>
+                    <li class="header-nav-left"><a class="smoothscroll" href="#contact">Contact</a></li>
+                    <li class="header-nav-right"><a class="smoothscroll" href="#about">Payment</a></li>
+                    <li class="header-nav-right"><a class="smoothscroll" href="#about">Owners</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <!--        <a class="header-menu_toggle" href="#0"><span>Menu</span></a>-->
+
+    </header>
+
+
+    <section class="main">
+        <div class="m-background">
+            <div class="mb-red shadow">
+                <div class="row main-left-content">
+                    <div class="column">
+                        <!--<h1>Hello<span style="color: rgb(0,0,46)">.</span></h1>-->
+
+                        <h1 id="word"></h1>
+                        <div class="main-left-content-about">
+                            <p>
+                                We are <strong>MAAPS</strong>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Matrix background -->
+            <!--
+            <div class="mb-black shadow">
+                <canvas id="matrix-bg"></canvas>
+            </div>
+-->
+
+            <!--Birds Animation-->
+            <div class="mb-black" id="vantajs"></div>
+        </div>
+
+
+    </section>
+
+    <section class="about">
+        <div>Hello</div>
+    </section>
+
+
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+
+    <!-- vanta js assets -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/100/three.min.js"></script>
+    <script src="js/vanta.birds.min.js"></script>
+
+    <!-- Instilize vanta js -->
+    <script>
+        VANTA.BIRDS({
+            el: "#vantajs",
+            mouseControls: true,
+            touchControls: true,
+            minHeight: 200.00,
+            minWidth: 200.00,
+            scale: 1.00,
+            scaleMobile: 1.00,
+            backgroundColor: 0x0,
+            birdSize: 2.00,
+            wingSpan: 27.00,
+            speedLimit: 3.00,
+            separation: 72.00,
+            alignment: 1.00,
+            cohesion: 10.00,
+            quantity: 3.00
+        });
+    </script>
+
+    <!--    <script src="js/matrix.js"></script>-->
+
+    <script src="js/main.js"></script>
+
+
+</body></html>
