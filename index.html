@@ -30,10 +30,10 @@
         <div class="header-content">
             <nav class="header-nav_wrap">
                 <ul class="header-nav">
-                    <li class="header-nav-left"><a class="smoothscroll" href="#about">About</a></li>
-                    <li class="header-nav-left"><a class="smoothscroll" href="#contact">Contact</a></li>
-                    <li class="header-nav-right"><a class="smoothscroll" href="#about">Payment</a></li>
-                    <li class="header-nav-right"><a class="smoothscroll" href="#about">Owners</a></li>
+                    <li class="header-nav-left"><a href="#about">About</a></li>
+                    <li class="header-nav-left"><a href="#contact">Contact</a></li>
+                    <li class="header-nav-right"><a href="#about">Payment</a></li>
+                    <li class="header-nav-right"><a href="#about">Owners</a></li>
                 </ul>
             </nav>
         </div>
@@ -44,37 +44,25 @@
 
 
     <section class="main">
-        <div class="m-background">
-            <div class="mb-red shadow">
-                <div class="row main-left-content">
-                    <div class="column">
-                        <!--<h1>Hello<span style="color: rgb(0,0,46)">.</span></h1>-->
 
+        <div class="m-container">
+            
+            <div class="m-left">
+                <div class="m-l-content">
+                    <div class="column">
                         <h1 id="word"></h1>
-                        <div class="main-left-content-about">
-                            <p>
-                                We are <strong>MAAPS</strong>
-                            </p>
-                        </div>
+                        <br>
+                        <p class="m-l-c-about">We are <strong>MAAPS</strong></p>
                     </div>
                 </div>
             </div>
-            <!-- Matrix background -->
-            <!--
-            <div class="mb-black shadow">
-                <canvas id="matrix-bg"></canvas>
+
+            <div class="m-right">
+                <!--Birds Animation-->
+                <div id="vantajs"></div>
             </div>
--->
-
-            <!--Birds Animation-->
-            <div class="mb-black" id="vantajs"></div>
         </div>
-
-
-    </section>
-
-    <section class="about">
-        <div>Hello</div>
+        
     </section>
 
 
@@ -100,6 +88,7 @@
             scale: 1.00,
             scaleMobile: 1.00,
             backgroundColor: 0x0,
+            backgroundAlpha: 0.00,
             birdSize: 2.00,
             wingSpan: 27.00,
             speedLimit: 3.00,
@@ -110,7 +99,7 @@
         });
     </script>
 
-    <!--    <script src="js/matrix.js"></script>-->
+    <!--        <script src="js/matrix.js"></script>-->
 
     <script src="js/main.js"></script>
 
